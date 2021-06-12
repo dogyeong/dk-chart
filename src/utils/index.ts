@@ -3,7 +3,7 @@ export const createCanvas = ($container: HTMLElement) => {
   const width = $container.offsetWidth;
   const height = $container.offsetHeight;
   const pixelRatio = window.devicePixelRatio;
-  const ctx = canvas.getContext('2d');
+  const ctx = canvas.getContext('2d')!;
 
   canvas.style.width = `${width}px`;
   canvas.style.height = `${height}px`;
@@ -17,12 +17,12 @@ export const createCanvas = ($container: HTMLElement) => {
   return canvas;
 };
 
-export const crispPixel = (pixel) => {
+export const crispPixel = (pixel: number) => {
   const halfThickness = 0.5;
   return (Number.isInteger(pixel) ? pixel : Math.round(pixel - halfThickness)) + halfThickness;
 };
 
-export const drawHelper = (ctx, fn) => {
+export const drawHelper = (ctx: CanvasRenderingContext2D, fn: () => any) => {
   ctx.save();
   fn();
   ctx.restore();

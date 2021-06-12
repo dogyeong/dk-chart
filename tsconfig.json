@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "ES5",
-    "module": "commonJS",
+    "module": "es2015",
     "strict": true,
     "importHelpers": true,
     "moduleResolution": "node",
@@ -14,9 +14,11 @@
       "@types/*": ["types/*"],
       "@/*": ["src/*"]
     },
-    "noEmit": true,
+    "noEmit": false,
     "typeRoots": ["./types"],
-    "lib": ["esnext", "dom", "dom.iterable"]
+    "lib": ["esnext", "dom", "dom.iterable"],
+    "strictPropertyInitialization": false,
+    "outDir": "dist"
   },
   "include": ["src/**/*.ts", "types/**/*"],
   "exclude": ["node_modules"]
