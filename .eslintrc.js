@@ -15,7 +15,7 @@ module.exports = {
     /**
      * 코드 포맷팅 관련 eslint rule을 off하고, prettier rule을 eslint에 포함시켜서 에러를 eslint가 검사하도록 한다.
      *
-     * 'prettier/@typescript-eslint'설정은 8.0.0버전부터 'prettier'설정에 포함되었다.
+     * 8.0.0버전부터 'prettier/@typescript-eslint'설정은 'prettier'설정에 포함되었다.
      * eslint-plugin-prettier 패키지를 사용하면 'prettier' 대신 'plugin:prettier/recommended'만 명시해주면 된다.
      * 'plugin:prettier/recommended'는 eslint-config-prettier와 eslint-plugin-prettier를 한번에 설정한다.
      *
