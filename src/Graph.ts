@@ -1,6 +1,6 @@
 import { drawHelper } from '@/utils';
-import { Candle } from '@/components/CandleChart';
-import Canvas from '@/components/base/Canvas';
+import { Candle } from '@/CandleChart';
+import Canvas from '@/base/Canvas';
 
 export interface GraphColorOptions {
   bgColor: string;

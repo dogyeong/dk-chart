@@ -21,8 +21,6 @@ export default class Line {
   constructor(canvas: HTMLCanvasElement, colorOptions: LineColorOptions) {
     this.canvas = canvas;
     this.lineColor = colorOptions.graphLineColor;
-    this.width = canvas.width;
-    this.height = canvas.height;
   }
 
   private getCtx() {

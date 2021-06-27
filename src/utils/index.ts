@@ -17,12 +17,12 @@ export const createCanvas = ($container: HTMLElement) => {
   return canvas;
 };
 
-export const crispPixel = (pixel: number) => {
+export const crispPixel = (pixel: number): number => {
   const halfThickness = 0.5;
   return (Number.isInteger(pixel) ? pixel : Math.round(pixel - halfThickness)) + halfThickness;
 };
 
-export const drawHelper = (ctx: CanvasRenderingContext2D, fn: () => any) => {
+export const drawHelper = (ctx: CanvasRenderingContext2D, fn: () => void) => {
   ctx.save();
   fn();
   ctx.restore();
