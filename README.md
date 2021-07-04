@@ -1,18 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Example</title>
-</head>
-<body>
-  <div id="container" style="width:800px;"></div>
-  <script src="../dist/index.js"></script>
-  <script>
-    const chart = dkChart.createChart(document.getElementById('container'));
-    chart.setCandles([
-    {
+# dk-chart
+
+> simple & lightweight financial chart package
+
+## Creating candle chart
+
+```javascript
+import { createChart } from 'dk-chart';
+
+const chart = dkChart.createChart(document.getElementById('container'));
+
+chart.setCandles([
+      {
         date: 'Sun Jun 27 2021 23:58:44 GMT+0900',
         open: 10,
         high: 20,
@@ -40,7 +38,6 @@
         low: 10,
         close: 11,
       }
-    ])
-  </script>
-</body>
-</html>
+    ]);
+```
+
