@@ -1,6 +1,6 @@
 {
   "name": "dk-chart",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "simple & lightweight financial chart",
   "main": "dist/index.js",
   "types": "types/index.d.ts",
