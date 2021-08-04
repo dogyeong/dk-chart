@@ -9,7 +9,7 @@ import { DKChart } from 'dk-chart';
 
 const chart = new DKChart(document.getElementById('container'));
 
-chart.setCandles([
+chart.setData([
       {
         date: 'Sun Jun 27 2021 23:58:44 GMT+0900',
         open: 10,
