@@ -1,7 +1,9 @@
-export default abstract class PubSub {
-  protected listeners: any[] = [];
+type Listener = (...args: any[]) => any;
 
-  public subscribe(listener: any) {
+export default abstract class PubSub {
+  protected listeners: Listener[] = [];
+
+  public subscribe(listener: Listener) {
     this.listeners.push(listener);
   }
 

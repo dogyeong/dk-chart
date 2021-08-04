@@ -10,9 +10,6 @@ export interface CandleChartData {
   high: number;
   low: number;
   close: number;
-  // volume: number;
-  // adjClose: number;
-  // symbol: string;
 }
 
 export interface CandleChartColorOptions extends GraphColorOptions, AxisColorOptions, LineColorOptions {}
