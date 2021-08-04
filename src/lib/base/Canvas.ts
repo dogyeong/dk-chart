@@ -1,4 +1,4 @@
-import PubSub from '@/base/PubSub';
+import PubSub from '@/lib/base/PubSub';
 
 export default abstract class Canvas extends PubSub {
   public width: number;

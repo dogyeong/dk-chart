@@ -1,6 +1,6 @@
-import { drawHelper } from '@/utils';
-import { Candle } from '@/CandleChart';
-import Canvas from '@/base/Canvas';
+import { drawHelper } from '@/lib/utils';
+import { Candle } from '@/lib/CandleChart';
+import Canvas from '@/lib/base/Canvas';
 
 export interface AxisColorOptions {
   bgColor: string;

@@ -1,6 +1,18 @@
-import CandleChart from '@/CandleChart';
-import { CandleChartColorOptions } from '@/CandleChart';
+import CandleChart, { CandleChartData } from '@/lib/CandleChart';
+import { CandleChartColorOptions } from '@/lib/CandleChart';
 
-export const createChart = ($container: HTMLElement, colorOptions?: CandleChartColorOptions) => {
-  return new CandleChart({ $container, colorOptions });
-};
+export class DKChart {
+  public readonly chart: CandleChart;
+
+  constructor($container: HTMLElement, colorOptions?: CandleChartColorOptions) {
+    this.chart = new CandleChart({ $container, colorOptions });
+  }
+
+  public setData(candles: CandleChartData[]) {
+    this.chart.setCandles(candles);
+  }
+
+  public toggleGraphType() {
+    this.chart.toggleGraphType();
+  }
+}
