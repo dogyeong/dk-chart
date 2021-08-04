@@ -1,4 +1,4 @@
-import { drawHelper } from '@/utils';
+import { drawHelper } from '@/lib/utils';
 
 export interface HorizontalLine {
   y: number;

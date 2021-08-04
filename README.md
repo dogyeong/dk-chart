@@ -5,9 +5,9 @@
 ## Creating candle chart
 
 ```javascript
-import { createChart } from 'dk-chart';
+import { DKChart } from 'dk-chart';
 
-const chart = dkChart.createChart(document.getElementById('container'));
+const chart = new DKChart(document.getElementById('container'));
 
 chart.setCandles([
       {

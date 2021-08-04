@@ -1,8 +1,8 @@
-import Graph, { GraphColorOptions } from '@/Graph';
-import PriceAxis from '@/PriceAxis';
-import TimeAxis, { AxisColorOptions } from '@/TimeAxis';
-import { createCanvas, crispPixel } from '@/utils';
-import Line, { LineColorOptions } from '@/Line';
+import Graph, { GraphColorOptions } from '@/lib/Graph';
+import PriceAxis from '@/lib/PriceAxis';
+import TimeAxis, { AxisColorOptions } from '@/lib/TimeAxis';
+import { createCanvas, crispPixel } from '@/lib/utils';
+import Line, { LineColorOptions } from '@/lib/Line';
 
 export interface CandleChartData {
   date: string;
@@ -10,9 +10,6 @@ export interface CandleChartData {
   high: number;
   low: number;
   close: number;
-  // volume: number;
-  // adjClose: number;
-  // symbol: string;
 }
 
 export interface CandleChartColorOptions extends GraphColorOptions, AxisColorOptions, LineColorOptions {}

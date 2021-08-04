@@ -1,6 +1,6 @@
-import { crispPixel, drawHelper } from '@/utils';
-import { AxisColorOptions } from '@/TimeAxis';
-import Canvas from '@/base/Canvas';
+import { crispPixel, drawHelper } from '@/lib/utils';
+import { AxisColorOptions } from '@/lib/TimeAxis';
+import Canvas from '@/lib/base/Canvas';
 
 interface PriceLine {
   y: number;
