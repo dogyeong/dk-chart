@@ -3,6 +3,7 @@
     "target": "ES5",
     "module": "es2015",
     "strict": true,
+    "declaration": true,
     "importHelpers": true,
     "moduleResolution": "node",
     "experimentalDecorators": true,
