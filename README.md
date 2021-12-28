@@ -2,42 +2,37 @@
 
 > simple & lightweight financial chart package
 
-## Creating candle chart
+**[Demo](https://codesandbox.io/s/dry-sun-4wsql?file=/index.html)**
 
-```javascript
-import { DKChart } from 'dk-chart';
+## Get Started
 
-const chart = new DKChart(document.getElementById('container'));
+### unpkg
 
-chart.setData([
-      {
-        date: 'Sun Jun 27 2021 23:58:44 GMT+0900',
-        open: 10,
-        high: 20,
-        low: 5,
-        close: 15,
-      },
-      {
-        date: 'Mon Jun 28 2021 23:58:44 GMT+0900',
-        open: 15,
-        high: 27,
-        low: 10,
-        close: 11,
-      },
-      {
-        date: 'Tue Jun 29 2021 23:58:44 GMT+0900',
-        open: 15,
-        high: 27,
-        low: 10,
-        close: 11,
-      },
-      {
-        date: 'Wed Jun 30 2021 23:58:44 GMT+0900',
-        open: 15,
-        high: 27,
-        low: 10,
-        close: 11,
-      }
-    ]);
+```html
+<html>
+  <body>
+    <div id="container" style="width:800px;"></div>
+    <script src="https://unpkg.com/dk-chart@1.2.1/dist/index.js"></script>
+    <script>
+      const { DKChart } = dkChart;
+      const chart = new DKChart(document.getElementById('container'));
+      
+      // your data
+      const CandleData = [
+        {
+          date: 1631631524000,
+          open: 29.158473787179815,
+          high: 30.52073739103113,
+          low: 25.101186463245156,
+          close: 27.118606078849332,
+        },
+        ...
+      ]
+
+      // draw chart
+      chart.setData(CandleData);
+    </script>
+  </body>
+</html>
 ```
 
