@@ -6,7 +6,7 @@
 
 ## Get Started
 
-### unpkg
+### using unpkg
 
 ```html
 <html>
